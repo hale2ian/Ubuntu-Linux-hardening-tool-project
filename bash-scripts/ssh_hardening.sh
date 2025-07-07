@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# ssh_hardening.sh
-# SSH Hardening Module for Linux Hardening Tool
+# Filename: ssh_hardening.sh
+# Title: SSH Hardening Module for Linux Hardening Tool
 # Author: Jean Ian Panganiban
 # Date: 20250630
 # Description: SSH module. This applies SSH security configurations for hardening.
