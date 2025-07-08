@@ -1,0 +1,155 @@
+=== File Permissions Hardening Started at Tue Jul  8 12:46:30 PM NZST 2025 ===
+[*] BEFORE: /etc/passwd permissions: -rw-r--r-- root root
+[*] Securing /etc/passwd: perms=644 owner=root group=root
+[*] AFTER: /etc/passwd permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/shadow permissions: -rw-r----- root shadow
+[*] Securing /etc/shadow: perms=000 owner=root group=root
+[*] AFTER: /etc/shadow permissions: ---------- root root
+[*] BEFORE: /etc/group permissions: -rw-r--r-- root root
+[*] Securing /etc/group: perms=644 owner=root group=root
+[*] AFTER: /etc/group permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/gshadow permissions: -rw-r----- root shadow
+[*] Securing /etc/gshadow: perms=000 owner=root group=root
+[*] AFTER: /etc/gshadow permissions: ---------- root root
+[*] BEFORE: /etc/ssh/sshd_config permissions: -rw-r--r-- root root
+[*] Securing /etc/ssh/sshd_config: perms=600 owner=root group=root
+[*] AFTER: /etc/ssh/sshd_config permissions: -rw------- root root
+[*] BEFORE: /etc/ssh permissions: drwxr-xr-x root root
+[*] Securing directory /etc/ssh: perms=700 owner=root group=root
+[*] AFTER: /etc/ssh permissions: drwx------ root root
+[!] /boot/grub2/grub.cfg not found. Skipping.
+[*] BEFORE: /boot/grub/grub.cfg permissions: -rw------- root root
+[*] Securing /boot/grub/grub.cfg: perms=600 owner=root group=root
+[*] AFTER: /boot/grub/grub.cfg permissions: -rw------- root root
+[*] BEFORE: /root permissions: drwx------ root root
+[*] Securing directory /root: perms=700 owner=root group=root
+[*] AFTER: /root permissions: drwx------ root root
+[!] Directory /root/.ssh not found. Skipping.
+[!] /root/.ssh/authorized_keys not found. Skipping.
+[*] BEFORE: /etc/crontab permissions: -rw-r--r-- root root
+[*] Securing /etc/crontab: perms=600 owner=root group=root
+[*] AFTER: /etc/crontab permissions: -rw------- root root
+[*] BEFORE: /etc/cron.hourly permissions: drwxr-xr-x root root
+[*] Securing directory /etc/cron.hourly: perms=700 owner=root group=root
+[*] AFTER: /etc/cron.hourly permissions: drwx------ root root
+[*] BEFORE: /etc/cron.daily permissions: drwxr-xr-x root root
+[*] Securing directory /etc/cron.daily: perms=700 owner=root group=root
+[*] AFTER: /etc/cron.daily permissions: drwx------ root root
+[*] BEFORE: /etc/cron.weekly permissions: drwxr-xr-x root root
+[*] Securing directory /etc/cron.weekly: perms=700 owner=root group=root
+[*] AFTER: /etc/cron.weekly permissions: drwx------ root root
+[*] BEFORE: /etc/cron.monthly permissions: drwxr-xr-x root root
+[*] Securing directory /etc/cron.monthly: perms=700 owner=root group=root
+[*] AFTER: /etc/cron.monthly permissions: drwx------ root root
+[*] BEFORE: /etc/cron.d permissions: drwxr-xr-x root root
+[*] Securing directory /etc/cron.d: perms=700 owner=root group=root
+[*] AFTER: /etc/cron.d permissions: drwx------ root root
+[*] BEFORE: /etc/sudoers permissions: -r--r----- root root
+[*] Securing /etc/sudoers: perms=440 owner=root group=root
+[*] AFTER: /etc/sudoers permissions: -r--r----- root root
+[*] BEFORE: /etc/sudoers.d permissions: drwxr-xr-x root root
+[*] Securing directory /etc/sudoers.d: perms=750 owner=root group=root
+[*] AFTER: /etc/sudoers.d permissions: drwxr-x--- root root
+[*] BEFORE: /etc/fstab permissions: -rw-r--r-- root root
+[*] Securing /etc/fstab: perms=644 owner=root group=root
+[*] AFTER: /etc/fstab permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d permissions: drwxr-xr-x root root
+[*] Securing directory /etc/pam.d: perms=755 owner=root group=root
+[*] AFTER: /etc/pam.d permissions: drwxr-xr-x root root
+[*] BEFORE: /etc/pam.d/chfn permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/chfn: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/chfn permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/chpasswd permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/chpasswd: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/chpasswd permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/chsh permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/chsh: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/chsh permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/common-account permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/common-account: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/common-account permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/common-auth permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/common-auth: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/common-auth permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/common-password permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/common-password: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/common-password permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/common-session permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/common-session: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/common-session permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/common-session-noninteractive permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/common-session-noninteractive: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/common-session-noninteractive permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/cron permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/cron: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/cron permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/cups permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/cups: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/cups permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-autologin permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-autologin: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-autologin permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-fingerprint permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-fingerprint: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-fingerprint permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-launch-environment permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-launch-environment: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-launch-environment permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-password permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-password: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-password permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-smartcard permissions: lrwxrwxrwx root root
+[*] Securing /etc/pam.d/gdm-smartcard: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-smartcard permissions: lrwxrwxrwx root root
+[*] BEFORE: /etc/pam.d/gdm-smartcard-pkcs11-exclusive permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-smartcard-pkcs11-exclusive: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-smartcard-pkcs11-exclusive permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-smartcard-sssd-exclusive permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-smartcard-sssd-exclusive: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-smartcard-sssd-exclusive permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/gdm-smartcard-sssd-or-password permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/gdm-smartcard-sssd-or-password: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/gdm-smartcard-sssd-or-password permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/login permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/login: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/login permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/newusers permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/newusers: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/newusers permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/other permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/other: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/other permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/passwd permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/passwd: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/passwd permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/ppp permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/ppp: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/ppp permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/runuser permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/runuser: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/runuser permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/runuser-l permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/runuser-l: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/runuser-l permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/sshd permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/sshd: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/sshd permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/sssd-shadowutils permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/sssd-shadowutils: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/sssd-shadowutils permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/su permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/su: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/su permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/sudo permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/sudo: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/sudo permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/sudo-i permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/sudo-i: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/sudo-i permissions: -rw-r--r-- root root
+[*] BEFORE: /etc/pam.d/su-l permissions: -rw-r--r-- root root
+[*] Securing /etc/pam.d/su-l: perms=644 owner=root group=root
+[*] AFTER: /etc/pam.d/su-l permissions: -rw-r--r-- root root
+[*] BEFORE: /var/log permissions: drwxrwxr-x root syslog
+[*] Securing directory /var/log: perms=750 owner=root group=root
+[*] AFTER: /var/log permissions: drwxr-x--- root root
+=== File Permissions Hardening Completed at Tue Jul  8 12:46:48 PM NZST 2025 ===

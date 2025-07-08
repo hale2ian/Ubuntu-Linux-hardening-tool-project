@@ -1,0 +1,18 @@
+=== Audit Report Comparison Started at Tue Jul  8 03:15:33 PM NZST 2025 ===
+
+=== Hardening Index ===
+Pre-hardening score:  65
+Post-hardening score: 
+Improvement:          -65
+
+=== Category Analysis ===
+SSH-related warnings: 6 -> 0 (Reduced by 6)
+Firewall-related warnings: 7 -> 0 (Reduced by 7)
+Service-related warnings: 96 -> 0 (Reduced by 96)
+File Permissions warnings: 1 -> 0 (Reduced by 1)
+Bootloader-related warnings: 70 -> 1 (Reduced by 69)
+Sudo-related warnings: 2 -> 0 (Reduced by 2)
+
+=== Resolved Warnings/Suggestions ===
+
+=== Audit Report Comparison Completed at Tue Jul  8 03:15:34 PM NZST 2025 ===
